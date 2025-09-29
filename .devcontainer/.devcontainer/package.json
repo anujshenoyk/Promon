@@ -1,0 +1,17 @@
+{
+  "name": "promon-manufacturing-system",
+  "version": "1.0.0",
+  "description": "PROMON - Production Monitoring System",
+  "scripts": {
+    "setup": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "frontend": "cd frontend && npm start",
+    "backend": "cd backend && npm run dev"
+  },
+  "keywords": ["promon", "production", "monitoring", "manufacturing"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
